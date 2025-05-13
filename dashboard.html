@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel Principal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d1b2a;
+      color: #E0E1DD;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      color: #00B4D8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: #1B263B;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 180, 216, 0.2);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      color: #B9FBC0;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .logout {
+      display: block;
+      margin: 2rem auto 0;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      background-color: #FF6B6B;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .logout:hover {
+      background-color: #ff8787;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Panel de Seguridad</h1>
+    <p>Has iniciado sesión exitosamente. Elige una funcionalidad para continuar (simulado).</p>
+  </header>
+
+  <main class="grid">
+    <div class="card">
+      <h2>🔐 Generador de Contraseñas</h2>
+      <p>Crea contraseñas seguras y únicas con un solo clic para cada una de tus cuentas.</p>
+    </div>
+
+    <div class="card">
+      <h2>💾 Almacenamiento Cifrado</h2>
+      <p>Tus contraseñas se guardan con cifrado de extremo a extremo, inaccesibles para terceros.</p>
+    </div>
+
+    <div class="card">
+      <h2>🛡️ MFA Integrado</h2>
+      <p>Activa la autenticación multifactor para mayor seguridad en tus cuentas importantes.</p>
+    </div>
+
+    <div class="card">
+      <h2>🤝 Compartir Contraseñas</h2>
+      <p>Comparte credenciales de forma segura con compañeros o familiares sin revelar la clave.</p>
+    </div>
+
+    <div class="card">
+      <h2>🌐 Detección en la Dark Web</h2>
+      <p>Monitorea si tus contraseñas han sido filtradas en brechas de seguridad conocidas.</p>
+    </div>
+
+    <div class="card">
+      <h2>🧩 Extensiones para Navegador</h2>
+      <p>Rellena contraseñas automáticamente y gestiona accesos directamente desde tu navegador.</p>
+    </div>
+
+    <div class="card">
+      <h2>🧬 Autenticación Biométrica</h2>
+      <p>Accede rápidamente usando tu huella digital o reconocimiento facial en dispositivos compatibles.</p>
+    </div>
+  </main>
+
+  <button class="logout" onclick="window.location.href='logout.html'">Cerrar Sesión</button>
+
+</body>
+</html>
