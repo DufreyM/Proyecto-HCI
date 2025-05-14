@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Autenticación Biométrica</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0d1b2a;
+      color: #E0E1DD;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #00B4D8;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      text-align: center;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    button {
+      background-color: #00B4D8;
+      color: #1B263B;
+      border: none;
+      padding: 0.8rem;
+      width: 100%;
+      max-width: 400px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #B9FBC0;
+    }
+
+    .biometric-info {
+      margin-top: 2rem;
+      background-color: #f1faee;
+      color: #1B263B;
+      padding: 1rem;
+      border-radius: 8px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .biometric-info span {
+      font-weight: bold;
+      color: #00B4D8;
+    }
+    a {
+      color: #B9FBC0;
+      text-decoration: none;
+      margin-top: 2rem;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🧬 Autenticación Biométrica</h1>
+  <p>Accede rápidamente a tu cuenta usando tu huella digital o reconocimiento facial en dispositivos compatibles para una mayor seguridad.</p>
+
+  <button onclick="simularAutenticacion()">Escanear Huella Digital</button>
+
+  <div class="biometric-info" id="biometric-info" style="display: none;">
+    <h3>Proceso de Autenticación Biométrica</h3>
+    <p>Por favor, coloca tu <span>huella digital</span> o utiliza el <span>reconocimiento facial</span> para autenticarte.</p>
+    <p><strong>Si no se detecta, asegúrate de que tu dispositivo sea compatible y que los sensores estén funcionando correctamente.</strong></p>
+    <p><em>¡Autenticación exitosa!</em></p>
+  </div>
+
+  <script>
+    function simularAutenticacion() {
+      const info = document.getElementById("biometric-info");
+      info.style.display = info.style.display === "none" ? "block" : "none";
+    }
+  </script>
+
+</body>
+<a href="dashboard.html">⬅ Volver al Panel</a>
+</html>

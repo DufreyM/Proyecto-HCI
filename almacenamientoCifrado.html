@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Almacenamiento Cifrado</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0d1b2a;
+      color: #e0e1dd;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      color: #00b4d8;
+      text-align: center;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background-color: #1b263b;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 180, 216, 0.3);
+    }
+    .info {
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .fake-storage {
+      background-color: #e0e1dd;
+      color: #1b263b;
+      padding: 1rem;
+      border-radius: 8px;
+      font-family: monospace;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    button {
+      margin-top: 1rem;
+      background-color: #00b4d8;
+      color: #1b263b;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #b9fbc0;
+    }
+    a {
+      color: #B9FBC0;
+      text-decoration: none;
+      margin-top: 2rem;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💾 Almacenamiento Cifrado</h1>
+    <div class="info">
+      Tus contraseñas se almacenan usando cifrado de extremo a extremo. Esto significa que solo tú puedes acceder a ellas: ni nosotros ni terceros pueden ver su contenido.
+    </div>
+    <div class="fake-storage" id="storage">
+      [usuario1] ➜ ************  
+      [correo@gmail.com] ➜ ************  
+      [Netflix] ➜ ************  
+      [Banco] ➜ ************
+    </div>
+    <button onclick="alert('Simulando acceso cifrado seguro')">Verificar Cifrado</button>
+  </div>
+</body>
+<a href="dashboard.html">⬅ Volver al Panel</a>
+</html>

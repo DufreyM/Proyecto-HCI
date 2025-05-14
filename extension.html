@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Extensiones para Navegador</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0d1b2a;
+      color: #E0E1DD;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #00B4D8;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      text-align: center;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    button {
+      background-color: #00B4D8;
+      color: #1B263B;
+      border: none;
+      padding: 0.8rem;
+      width: 100%;
+      max-width: 400px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #B9FBC0;
+    }
+
+    .extension-info {
+      margin-top: 2rem;
+      background-color: #f1faee;
+      color: #1B263B;
+      padding: 1rem;
+      border-radius: 8px;
+      max-width: 600px;
+      text-align: center;
+    }
+    a {
+      color: #B9FBC0;
+      text-decoration: none;
+      margin-top: 2rem;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🧩 Extensiones para Navegador</h1>
+  <p>Gestiona y rellena tus contraseñas automáticamente directamente desde tu navegador para una experiencia más rápida y segura.</p>
+
+  <button onclick="mostrarInstrucciones()">Ver Instrucciones de Instalación</button>
+
+  <div class="extension-info" id="extension-info" style="display: none;">
+    <h3>Instrucciones para Instalar la Extensión</h3>
+    <ul>
+      <li>1. Descarga nuestra extensión desde el navegador de tu preferencia.</li>
+      <li>2. Instálala y habilita el acceso a las contraseñas de tu gestor de contraseñas.</li>
+      <li>3. Utiliza el icono de la extensión para autocompletar campos de contraseñas.</li>
+      <li>4. Puedes gestionar tus credenciales directamente desde la interfaz de la extensión.</li>
+    </ul>
+    <p><strong>¡Ahora podrás gestionar y acceder a tus contraseñas con un solo clic!</strong></p>
+  </div>
+
+  <script>
+    function mostrarInstrucciones() {
+      const info = document.getElementById("extension-info");
+      info.style.display = info.style.display === "none" ? "block" : "none";
+    }
+  </script>
+<a href="dashboard.html">⬅ Volver al Panel</a>
+</body>
+</html>

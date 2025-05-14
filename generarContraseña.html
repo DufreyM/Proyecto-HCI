@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Contraseñas</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0d1b2a;
+      color: #E0E1DD;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    h1 {
+      color: #00B4D8;
+      margin-bottom: 1rem;
+    }
+    .password-box {
+      background-color: #1B263B;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      width: 100%;
+      max-width: 400px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 0.7rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      text-align: center;
+      background-color: #E0E1DD;
+      color: #1B263B;
+    }
+    button {
+      background-color: #00B4D8;
+      color: #1B263B;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 0.5rem;
+    }
+    button:hover {
+      background-color: #B9FBC0;
+    }
+    .back-link {
+      margin-top: 2rem;
+      text-decoration: none;
+      color: #00B4D8;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    a {
+      color: #B9FBC0;
+      text-decoration: none;
+      margin-top: 2rem;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔐 Generador de Contraseñas</h1>
+  <div class="password-box">
+    <input type="text" id="password" readonly value="************" />
+  </div>
+  <button onclick="generatePassword()">Generar Contraseña Segura</button>
+  <a href="dashboard.html">⬅ Volver al Panel</a>
+
+  <script>
+    function generatePassword() {
+      const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+{}[]";
+      let password = "";
+      for (let i = 0; i < 16; i++) {
+        password += charset.charAt(Math.floor(Math.random() * charset.length));
+      }
+      document.getElementById("password").value = password;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MFA Integrado</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0d1b2a;
+      color: #E0E1DD;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #00B4D8;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      text-align: center;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .mfa-options {
+      background-color: #1B263B;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,180,216,0.2);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    select, input[type="checkbox"] {
+      margin-bottom: 1rem;
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #00B4D8;
+      color: #1B263B;
+      border: none;
+      padding: 0.8rem;
+      width: 100%;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #B9FBC0;
+    }
+    a {
+      color: #B9FBC0;
+      text-decoration: none;
+      margin-top: 2rem;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🛡️ MFA Integrado</h1>
+  <p>Activa la autenticación multifactor (MFA) para añadir una capa extra de seguridad. Selecciona los métodos de verificación que prefieras:</p>
+
+  <div class="mfa-options">
+    <label for="method">Método principal</label>
+    <select id="method">
+      <option>Correo electrónico</option>
+      <option>SMS</option>
+      <option>Aplicación de autenticación</option>
+      <option>Biometría</option>
+    </select>
+
+    <label>
+      <input type="checkbox" checked disabled />
+      Activar MFA al iniciar sesión
+    </label>
+
+    <button onclick="alert('MFA activado (simulado)')">Guardar configuración</button>
+  </div>
+<a href="dashboard.html">⬅ Volver al Panel</a>
+</body>
+</html>

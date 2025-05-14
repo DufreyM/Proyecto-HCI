@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compartir Contraseñas</title>
+  <style>
+    body {
+      background-color: #0d1b2a;
+      color: #E0E1DD;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      color: #00B4D8;
+    }
+
+    p {
+      margin-bottom: 2rem;
+    }
+
+    .input-group {
+      background-color: #1B263B;
+      padding: 1.5rem;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: 2rem auto;
+    }
+
+    label, input, textarea, button {
+      display: block;
+      width: 100%;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.6rem;
+      border-radius: 5px;
+      border: none;
+      background-color: #415A77;
+      color: #fff;
+    }
+
+    button {
+      background-color: #00B4D8;
+      color: #0d1b2a;
+      font-weight: bold;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 8px;
+      margin-top: 1.5rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #B9FBC0;
+      color: #1B263B;
+    }
+
+    a {
+      color: #B9FBC0;
+      text-decoration: none;
+      margin-top: 2rem;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>🤝 Compartir Contraseñas</h1>
+  <p>Simulación para compartir credenciales de forma segura con tus contactos.</p>
+
+  <div class="input-group">
+    <label for="correo">Correo del destinatario:</label>
+    <input type="email" id="correo" placeholder="ejemplo@correo.com">
+
+    <label for="servicio">Servicio o sitio web:</label>
+    <input type="text" id="servicio" placeholder="Ej. Netflix, Gmail...">
+
+    <label for="nota">Mensaje opcional:</label>
+    <textarea id="nota" rows="4" placeholder="Puedes agregar una nota..."></textarea>
+
+    <button onclick="alert('Simulando el envío seguro de credenciales...')">Compartir ahora</button>
+  </div>
+
+  <a href="dashboard.html">⬅ Volver al Panel</a>
+</body>
+</html>
